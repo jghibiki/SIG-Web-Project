@@ -12,6 +12,11 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms');
 var platform_browser_1 = require('@angular/platform-browser');
+var button_1 = require('@angular2-material/button');
+var card_1 = require('@angular2-material/card');
+var input_1 = require('@angular2-material/input');
+var list_1 = require('@angular2-material/list');
+var toolbar_1 = require('@angular2-material/toolbar');
 var messaging_component_1 = require('./messaging.component');
 var MessagingModule = (function () {
     function MessagingModule() {
@@ -21,7 +26,12 @@ var MessagingModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                button_1.MdButtonModule.forRoot(),
+                card_1.MdCardModule.forRoot(),
+                input_1.MdInputModule.forRoot(),
+                list_1.MdListModule.forRoot(),
+                toolbar_1.MdToolbarModule.forRoot(),
             ],
             declarations: [messaging_component_1.MessagingComponent],
             exports: [messaging_component_1.MessagingComponent],

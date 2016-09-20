@@ -20,7 +20,7 @@ export class MessageService {
                     .catch(this.handleError);
     }
 
-    sendMessage(username, message): Promise<void> {
+    sendMessage(username: string, message: string): Promise<void> {
         var payload = {
             username: username,
             message: message
@@ -30,7 +30,7 @@ export class MessageService {
             .then(() => null)
             .catch(this.handleError);
 
-    })
+    }
 
     private handleError(error: any): Promise<any> {
         console.error('An error occurred', error); // for demo purposes only
