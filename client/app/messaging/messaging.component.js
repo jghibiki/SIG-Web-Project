@@ -31,7 +31,9 @@ var MessagingComponent = (function () {
         });
     };
     MessagingComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.getMessages();
+        setInterval(function () { return _this.getMessages(); }, 5000);
     };
     MessagingComponent = __decorate([
         core_1.Component({

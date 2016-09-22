@@ -8,7 +8,7 @@ import { Message} from './message';
 @Injectable()
 export class MessageService {
 
-    private apiUrl = "http://localhost:8000/message";
+    private apiUrl = "http://10.134.189.235:8000/message";
     private headers = new Headers({'Content-Type': 'application/json'});
 
     constructor(private http: Http) { }

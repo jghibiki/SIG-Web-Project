@@ -29,10 +29,11 @@ export class MessagingComponent implements OnInit {
                 this.message = "";
                 this.getMessages(); 
             });
-
     }
 
     ngOnInit(): void {
         this.getMessages();
+
+        setInterval(() => this.getMessages(), 5000);
     }
 }
