@@ -30,5 +30,5 @@ app.post('/message', function(req, res){
 
 /* Start app */
 app.listen(8000, function(){
-    console.log("Application listening at localhost:8000.");
+    console.log("Application listening at 0.0.0.0:8000.");
 })

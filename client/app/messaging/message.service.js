@@ -14,7 +14,7 @@ require('rxjs/add/operator/toPromise');
 var MessageService = (function () {
     function MessageService(http) {
         this.http = http;
-        this.apiUrl = "http://10.134.189.235:8000/message";
+        this.apiUrl = "http://localhost:8000/message";
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     MessageService.prototype.getMessages = function () {
