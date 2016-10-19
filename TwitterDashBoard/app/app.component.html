@@ -1,0 +1,11 @@
+<md-list dense style="border: 1px solid rgba(0,0,0,0.12);">
+    <! -- default message if no messages -->
+    <md-list-item *ngIf="tweets.length == 0">Retreiving Tweets!</md-list-item>
+
+    <!-- Message -->
+    <span *ngIf="tweets.length > 0">
+        <md-list-item *ngFor="let tweet of tweets">
+            <span>{{tweet.text}}</span>
+        </md-list-item>
+    </span>
+</md-list>
